@@ -4,6 +4,8 @@
     {
         //Attributi/proprietà
         private string condizione;
+         //stato
+        private bool acceso = false;
         //Getter
         public string Getcondizione()
         {
@@ -29,19 +31,34 @@
             this.condizione = condizione;
 
         }
-        //stato
-        private bool acceso = false;
+       
         //Metodi
         public void AccendiElettrodomestico()
         {
-            if (this.acceso=false)
+            if (this.acceso==false)
             {
                 Setacceso(true);
                 Console.WriteLine("In funzione!");
+                Console.WriteLine("------------------------------------");
             }
             else
             {
                 Console.WriteLine("Gia acceso!");
+                Console.WriteLine("------------------------------------");
+            }
+        }
+        public void SpegniElettrodomestico()
+        {
+            if (this.acceso == true)
+            {
+                Setacceso(false);
+                Console.WriteLine("Spento correttamente");
+                Console.WriteLine("------------------------------------");
+            }
+            else
+            {
+                Console.WriteLine("Gia spento!");
+                Console.WriteLine("------------------------------------");
             }
         }
 
@@ -55,6 +72,7 @@
             else
             {
                 Console.WriteLine("Prodotto mai acceso!");
+                Console.WriteLine("------------------------------------");
             }
         }
     }

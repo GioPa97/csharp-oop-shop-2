@@ -13,8 +13,9 @@ prodottoDue.stampaProdotto();
 //-------------------------shop2---------------------------------------------------
 Elettrodomestico stampante = new Elettrodomestico("Epson","Elettrodomestico","nuovo",60.99,22);
 stampante.stampaProdotto();
-bool acceso= stampante.Getacceso();
-Console.WriteLine(acceso);
 stampante.AccendiElettrodomestico();
-bool accesodue = stampante.Getacceso();
-Console.WriteLine(acceso);
+stampante.AccendiElettrodomestico();
+stampante.SpegniElettrodomestico();
+stampante.SpegniElettrodomestico();
+
+
