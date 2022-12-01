@@ -4,7 +4,7 @@
     {
         //Attributi/proprietà
         private string condizione;
-         //stato
+        //stato
         private bool acceso = false;
         //Getter
         public string Getcondizione()
@@ -31,11 +31,11 @@
             this.condizione = condizione;
 
         }
-       
+
         //Metodi
         public void AccendiElettrodomestico()
         {
-            if (this.acceso==false)
+            if (this.acceso == false)
             {
                 Setacceso(true);
                 Console.WriteLine("In funzione!");
@@ -65,6 +65,7 @@
         public override void stampaProdotto()
         {
             base.stampaProdotto();
+            Console.WriteLine(this.condizione);
             if (Getacceso())
             {
                 Console.WriteLine("Prodotto testato!");

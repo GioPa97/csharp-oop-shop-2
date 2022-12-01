@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharpShop_2
+﻿namespace CSharpShop_2
 {
     public class prodotto
     {
@@ -121,7 +109,9 @@ namespace CSharpShop_2
             string descrizione = getDescrizione();
             prezzo = getPrezzo();
             float iva = getIva();
-            Console.WriteLine("Info" + " " + nome + "----------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Info" + " " + nome + "______________________");
             creaNomeEsteso();
             Console.WriteLine("Codice prodotto:" + " " + this.codice);
             Console.WriteLine("Nome prodotto:" + " " + nome);
@@ -129,7 +119,8 @@ namespace CSharpShop_2
             Console.WriteLine("Prezzo prodotto:" + " " + prezzo + "EUR");
             Console.WriteLine("Iva prodotto:" + " " + iva + "%");
             calcolaprezzoIvato();
-            Console.WriteLine("____________________________________");
+            Console.WriteLine("_______________________________________");
+
         }
 
         //------------------------------------------------------------------------------------------
