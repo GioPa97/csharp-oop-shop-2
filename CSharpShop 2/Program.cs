@@ -31,4 +31,12 @@ Acqua acquaLete = new Acqua("Acqua Lete", "Alimentari", 1, 4, 1, 6, "MonteOlimpo
 acquaLete.stampaProdotto();
 acquaLete.riempi(6);
 
+//Cibo in scatola
+CiboInScatola gattoMatto = new CiboInScatola("GattoMatto","Alimenti per animali",300,2.5,10);
+gattoMatto.stampaProdotto();
+
+//Sacchetto frutta
+SacchettoFrutta FruttaMix = new SacchettoFrutta("FruttaMix", "Alimentari", 250, 5, 5, 10);
+FruttaMix.stampaProdotto();
+
 
