@@ -23,3 +23,12 @@ Elettrodomestico monitor = new Elettrodomestico("samsung lcd", "Elettrodomestico
 monitor.stampaProdotto();
 
 
+//acqua
+Acqua acquaPanna = new Acqua("Acqua Panna", "Alimentari", 1,4,2,7,"Monticchio");
+acquaPanna.stampaProdotto();
+acquaPanna.bevi();
+Acqua acquaLete = new Acqua("Acqua Lete", "Alimentari", 1, 4, 1, 6, "MonteOlimpo");
+acquaLete.stampaProdotto();
+acquaLete.riempi(6);
+
+
