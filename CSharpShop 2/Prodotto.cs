@@ -114,7 +114,7 @@ namespace CSharpShop_2
         }
 
 
-        public void stampaProdotto()
+        public virtual void stampaProdotto()
         {
 
             string nome = getNome();
