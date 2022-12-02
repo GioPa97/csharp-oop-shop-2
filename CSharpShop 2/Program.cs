@@ -29,6 +29,7 @@ acquaPanna.stampaProdotto();
 acquaPanna.bevi();
 Acqua acquaLete = new Acqua("Acqua Lete", "Alimentari", 1, 4, 1, 6, "MonteOlimpo");
 acquaLete.stampaProdotto();
+acquaLete.svuota(1);
 acquaLete.riempi(6);
 
 //Cibo in scatola

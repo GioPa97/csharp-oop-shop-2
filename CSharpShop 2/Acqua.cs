@@ -74,7 +74,7 @@
 
         public uint riempi(uint litri)
         {
-            if (this.litri <= this.capacità)
+            if (litri <= this.capacità-this.litri)
             {
                 this.litri = this.litri + litri;
                 Console.WriteLine("Hai aggiunto" + litri + "l" + "al prodotto!");
@@ -88,11 +88,11 @@
         }
         public uint svuota(uint litri)
         {
-            if (this.litri > 0 && this.litri <= this.capacità)
+            if (litri > 0 && this.litri <= this.capacità)
             {
 
                 this.litri = this.litri - litri;
-                Console.WriteLine("Hai svuotato" + litri + "l" + "al prodotto!");
+                Console.WriteLine("Hai svuotato" +" " + litri + "l" + " "+"al prodotto!");
             }
             else
             {
